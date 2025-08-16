@@ -1,0 +1,88 @@
+<html>
+<head>
+    <title>Registration</title>
+    <h1>Student Registration Form</h1>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: skyblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 110vh;
+            margin: 0;
+            flex-direction: column;
+        }
+        form {
+            background: orange;
+            padding: 20px;
+            border-radius: 6px;
+            max-width: 500px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        h1 {
+            text-align: center;
+            color: black;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        input[type="text"],input[type="password"],textarea,select {
+            width: 100%;
+            padding: 8px;
+            margin:6px 0 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="radio"],input[type="checkbox"] {
+            margin-right: 8px;
+            input[type="sunmit"] {
+                background-color: blue;
+                color: white;
+                border: none;
+                padding: 10px 18px;
+                border-radius: 5px;
+                cursor: pointer;
+                margin-top: 20px;
+            }
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="Full name">Full name:</label>
+        <input type="text" id="Full name" name="Fullname"/>
+        <label>Gender: </label>
+        <label><input type="radio" name="gender" value="Male">Male</label>
+        <label><input type="radio" name="gender" value="Female">Female</label>
+        <label for="Email">Email:</label>
+        <input type="email" id="email" name="email" required/>
+        <label for="Password">Password:</label>
+        <input type="password" id="password" name="password"/>
+        <label for="college" name="college name" rows="3" placeholder="Enter text..."></textarea>
+        <label>Year:</label>
+        <label><input type="radio" name="year" value="I">I Year</label>
+        <label><input type="radio" name="year" value="II">II Year</label>
+        <label><input type="radio" name="year" value="III">III Year</label>
+        <label>languages known:</label>
+        <label><input type="checkbox" name="languages" value="English">English</label>
+        <label><input type="checkbox" name="languages" value="Telugu">Telugu</label>
+        <label><input type="checkbox" name="languages" value="Hindi">Hindi</label>
+        <label for="course">Select course:</label>
+        <select id="course" name="course">
+            <option value="CSE">CSE</option>
+            <option value="ECE">ECE</option>
+            <option value="IT">IT</option>
+            <option value="EEE">EEE</option>
+        </select>
+        <input type="submit" value="submit"/>
+    </form>
+</body>
+</html>
